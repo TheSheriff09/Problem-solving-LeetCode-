@@ -1,0 +1,22 @@
+i=0
+while(i<2 or i>10):
+    i=int(input("enter number of elements of the array"))
+x=[None]*i
+
+for i in range(0,i):
+    x[i]=int(input(f"enter x[{i}]"))
+    
+done=False
+p=int(input("enter the number  you want"))
+for i in range(len(x)+1):
+    for j in range(i+1,len(x)):
+        s=x[i]+x[j]
+        if(s==p):
+            print(f"{p}= x[{i}] + x[{j}]")
+            done=True
+            break
+        s=0
+    if(done):
+        break
+    
+        

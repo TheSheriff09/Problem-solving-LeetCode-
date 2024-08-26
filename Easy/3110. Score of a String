@@ -1,0 +1,9 @@
+ch=input("enter the string :")
+while len(ch)<2 or len(ch)>100 or not(ch.isalpha()) :
+    ch=input("enter the string :")
+ch=ch.lower()
+s=0
+for i in range(len(ch)-1):
+    s=s+abs(ord(ch[i])-ord(ch[i+1]))
+print(f"the score of {ch} is {s}")
+
