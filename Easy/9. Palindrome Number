@@ -1,0 +1,11 @@
+x=int(input("enter a number to check if it\'s palindrom or not"))
+ch=str(x)
+ch1=''
+i=len(ch)
+while(i!=0):
+    i-=1
+    ch1=ch1+ch[i]
+if (ch1==ch):
+    print("palindrom")
+else:
+    print("not palindrom")
