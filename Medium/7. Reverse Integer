@@ -1,0 +1,10 @@
+s=int(input("enter integer"))
+x=1
+if (s<0):
+    x=-1
+res=0
+s=abs(s)
+while s>0:
+    res=res*10+s%10
+    s//=10
+print(res*x)

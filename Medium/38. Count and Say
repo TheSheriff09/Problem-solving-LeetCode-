@@ -1,0 +1,16 @@
+def countAndSay(ch):
+    ch1 = ""
+    count = 1
+    for i in range(len(ch)):
+        if i < len(ch) - 1 and ch[i] == ch[i + 1]:
+            count += 1
+        else:
+            ch1 += str(count) + ch[i]
+            count = 1
+    return ch1
+
+n = int(input("Enter an integer: "))
+result = "1"
+for i in range(n-1):
+    result = countAndSay(result)
+    print(result)
